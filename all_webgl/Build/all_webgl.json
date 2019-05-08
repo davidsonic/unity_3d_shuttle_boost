@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "3_project_boost",
+"dataUrl": "all_webgl.data.unityweb",
+"asmCodeUrl": "all_webgl.asm.code.unityweb",
+"asmMemoryUrl": "all_webgl.asm.memory.unityweb",
+"asmFrameworkUrl": "all_webgl.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}

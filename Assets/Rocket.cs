@@ -2,12 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Rocket : MonoBehaviour {
     Rigidbody rigidBody;
     AudioSource audioSource;
     [SerializeField]float rcsThrust = 100f;
-    [SerializeField] float mainThrust = 100f;
+    [SerializeField] float mainThrust = 50f;
 
 	// Use this for initialization
 	void Start () {
@@ -24,6 +25,10 @@ public class Rocket : MonoBehaviour {
 
     void OnCollisionEnter(Collision collision){
         switch(collision.gameObject.tag){
+            case "Finish":
+                print("finish");
+                SceneManager.LoadScene(1);
+                break;
             case "Friendly":
                 print("ok");
                 break;
